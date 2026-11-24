@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kinusion Labs — XR en español desde Managua para LATAM</title>
+    <meta
+      name="description"
+      content="Kinusion Labs: espacio para compartir experiencias XR y promover el desarrollo XR en español. Quest, Android XR y SPECS."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <a class="logo" href="#">Kinusion <span>Labs</span></a>
+        <nav class="navlinks">
+          <a href="#proyectos" data-es="Proyectos" data-en="Projects"
+            >Proyectos</a
+          >
+          <a href="#aprende" data-es="Aprende" data-en="Learn">Aprende</a>
+          <a href="#mision" data-es="Misión" data-en="Mission">Misión</a>
+          <a href="#fundador" data-es="Fundador" data-en="Founder">Fundador</a>
+          <a href="#comunidad" data-es="Comunidad" data-en="Community"
+            >Comunidad</a
+          >
+          <a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
+        </nav>
+        <div style="display: flex; gap: 10px; align-items: center">
+          <div class="lang">
+            <button id="btn-es" class="active">ES</button
+            ><button id="btn-en">EN</button>
+          </div>
+          <a
+            class="btn btn-p"
+            href="#proyectos"
+            data-es="Explorar demos"
+            data-en="Explore demos"
+            >Explorar demos</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="hero">
+        <div>
+          <div class="eyebrow">Kinusion Labs — Managua → LATAM</div>
+          <h1
+            data-es="¿Tenés un Quest 2? Ya podés empezar."
+            data-en="Got a Quest 2? You can already start."
+          >
+            ¿Tenés un Quest 2? Ya podés empezar.
+          </h1>
+          <p
+            class="lead"
+            data-es="Compartimos experimentos XR y enseñamos desarrollo XR en español para Quest, Android XR y SPECS. Sin excusas de hardware."
+            data-en="We share XR experiments and teach XR development in Spanish for Quest, Android XR and SPECS. No hardware excuses."
+          >
+            Compartimos experimentos XR y enseñamos desarrollo XR en español
+            para Quest, Android XR y SPECS. Sin excusas de hardware.
+          </p>
+          <div
+            style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 18px"
+          >
+            <a
+              class="btn btn-p"
+              href="#proyectos"
+              data-es="Explorar demos"
+              data-en="Explore demos"
+              >Explorar demos</a
+            ><a
+              class="btn btn-o"
+              href="#aprende"
+              data-es="Ver tutoriales"
+              data-en="See tutorials"
+              >Ver tutoriales</a
+            >
+          </div>
+          <div class="proof">
+            <span class="badge">Meta VR Start Developer Competition 2026</span
+            ><span class="badge">Learn AR with SPECS</span
+            ><span class="badge">Build with AI - Pico Space Program</span>
+          </div>
+          <p
+            class="muted"
+            style="margin-top: 14px"
+            data-es="Desde Managua, para toda LATAM."
+            data-en="From Managua, for all of LATAM."
+          >
+            Desde Managua, para toda LATAM.
+          </p>
+        </div>
+        <div>
+          <img
+            class="hero-img"
+            src="assets/hero.webp"
+            alt="Kalimba flotante en espacio lavanda"
+          />
+          <div class="badge" style="margin-top: 12px">
+            Kinusion = kinetic + motion + vision
+          </div>
+        </div>
+      </section>
+
+      <section id="mision">
+        <div class="light">
+          <h2 data-es="Misión" data-en="Mission">Misión</h2>
+          <p
+            data-es="Un espacio para compartir experiencias XR y promover el desarrollo XR en español. Un estudio que publica experiencias en Horizon Store y un hub de comunidad dev para LATAM. Portafolio personal bajo el nombre del estudio."
+            data-en="A space to share XR experiences and promote XR development in Spanish. A studio shipping experiences to the Horizon Store and a dev community hub for LATAM. Personal portfolio under the studio name."
+          >
+            Un espacio para compartir experiencias XR y promover el desarrollo
+            XR en español. Un estudio que publica experiencias en Horizon Store
+            y un hub de comunidad dev para LATAM. Portafolio personal bajo el
+            nombre del estudio.
+          </p>
+          <div class="grid3" style="margin-top: 20px">
+            <div>
+              <h3>Aprender haciendo</h3>
+              <p>Experimentos reales, no humo.</p>
+            </div>
+            <div>
+              <h3>En español, con vos</h3>
+              <p>Tutoriales claros, paso a paso.</p>
+            </div>
+            <div>
+              <h3>Con lo que tenés</h3>
+              <p>Quest 2 + XR Simulator. Quest 3/3S no es requerido.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="proyectos">
+        <div class="eyebrow">01 — Proyectos</div>
+        <h2
+          data-es="Proyectos reales, no placeholders"
+          data-en="Real projects, not placeholders"
+        >
+          Proyectos reales, no placeholders
+        </h2>
+        <div class="filters">
+          <button class="active" data-filter="all">Todos / All</button
+          ><button data-filter="quest">Quest</button
+          ><button data-filter="specs">SPECS</button
+          ><button data-filter="dev">En desarrollo / In progress</button>
+        </div>
+        <div class="grid3">
+          <article class="card" data-cat="quest">
+            <img src="assets/quest.webp" alt="KaliSenses Quest" />
+            <div class="card-body">
+              <span class="tag">Meta Quest • Unity 6</span>
+              <span class="tag">Meta VR Start Developer Competition 2026</span>
+              <h3>KaliSenses — Quest</h3>
+              <p
+                data-es="Kalimba de realidad mixta solo con manos. Poné tu escritorio y tocá un instrumento virtual de 17 teclas en Do mayor. Modo Libre con luciérnagas y grabación, y modo Seguir con Amazing Grace, Silent Night y Scarborough Fair. Cuarto Calmo y passthrough completo."
+                data-en="Hands-only mixed reality kalimba. Place it on your desk and play a virtual 17-key C-major instrument. Free Play with fireflies and recording, and Follow Along with Amazing Grace, Silent Night and Scarborough Fair. Calm Room and full passthrough."
+              >
+                Kalimba de realidad mixta solo con manos. Poné tu escritorio y
+                tocá un instrumento virtual de 17 teclas en Do mayor. Modo Libre
+                con luciérnagas y grabación, y modo Seguir con Amazing Grace,
+                Silent Night y Scarborough Fair. Cuarto Calmo y passthrough
+                completo.
+              </p>
+              <a
+                class="btn btn-p"
+                href="https://devpost.com/software/kalisenses-2l6eps"
+                target="_blank"
+                rel="noopener"
+                >Ver en DevPost</a
+              >
+            </div>
+          </article>
+          <article class="card" data-cat="specs">
+            <img src="assets/specs.webp" alt="Kalisenses SPECS" />
+            <div class="card-body">
+              <span class="tag">SPECS • Lens Studio</span>
+              <span class="tag">Learn AR with SPECS</span>
+              <h3>Kalisenses — SPECS</h3>
+              <p
+                data-es="La misma idea en gafas AR. Aprendé a tocar con 8 lecciones, Jugá Libre sin puntaje, y Seguí orbes que bajan hacia las teclas. Sin experiencia musical, solo curiosidad."
+                data-en="The same idea in AR glasses. Learn to play with 8 lessons, Free Play without scoring, and Follow orbs descending toward the keys. No musical experience, just curiosity."
+              >
+                La misma idea en gafas AR. Aprendé a tocar con 8 lecciones, Jugá
+                Libre sin puntaje, y Seguí orbes que bajan hacia las teclas. Sin
+                experiencia musical, solo curiosidad.
+              </p>
+              <a
+                class="btn btn-p"
+                href="https://devpost.com/software/kalisenses"
+                target="_blank"
+                rel="noopener"
+                >Ver en DevPost</a
+              >
+            </div>
+          </article>
+          <article class="card" data-cat="dev">
+            <div
+              style="
+                height: 200px;
+                background: var(--bg);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 800;
+                color: var(--heading);
+                font-size: 28px;
+              "
+            >
+              PICO • Build with AI
+            </div>
+            <div class="card-body">
+              <span class="tag">PICO • Build with AI</span>
+              <span class="tag">En desarrollo • Feb 2027</span>
+              <h3>Proyecto Pico — En desarrollo</h3>
+              <p
+                data-es="Participando ahora en Build with AI - Pico Space Program. Construyendo una app espacial con Android / Unity y agentes de IA. Sin headset requerido para probar."
+                data-en="Currently in Build with AI - Pico Space Program. Building a spatial app with Android / Unity and AI agents. No headset required to test."
+              >
+                Participando ahora en Build with AI - Pico Space Program.
+                Construyendo una app espacial con Android / Unity y agentes de
+                IA. Sin headset requerido para probar.
+              </p>
+              <a
+                class="btn btn-p"
+                href="https://pico-space-program.devpost.com/"
+                target="_blank"
+                rel="noopener"
+                >Ver competencia</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="aprende">
+        <div class="eyebrow">02 — Aprende</div>
+        <h2>Tutoriales</h2>
+        <p data-es="Nuevo video cada semana." data-en="New video every week.">
+          Nuevo video cada semana.
+        </p>
+        <div style="display: grid; gap: 12px; margin-top: 16px">
+          <div class="tuto">
+            <div>
+              <strong>De Quest 2 a VR Glasses: setup en español</strong>
+              <div class="muted">Principiante • Quest • 12 min</div>
+            </div>
+            <a
+              class="btn btn-o"
+              href="https://www.youtube.com/@kinusionlabs"
+              target="_blank"
+              rel="noopener"
+              >Ver en YouTube</a
+            >
+          </div>
+          <div class="tuto">
+            <div>
+              <strong
+                >Hand tracking sin frustración: lo que aprendí con
+                KaliSenses</strong
+              >
+              <div class="muted">Principiante • Quest • 10 min</div>
+            </div>
+            <a
+              class="btn btn-o"
+              href="https://www.youtube.com/@kinusionlabs"
+              target="_blank"
+              rel="noopener"
+              >Ver en YouTube</a
+            >
+          </div>
+          <div class="tuto">
+            <div>
+              <strong>De Lens Studio a SPECS: tu primer Lens</strong>
+              <div class="muted">Principiante • SPECS • 15 min</div>
+            </div>
+            <a
+              class="btn btn-o"
+              href="https://www.youtube.com/@kinusionlabs"
+              target="_blank"
+              rel="noopener"
+              >Ver en YouTube</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="grid3">
+          <div class="card">
+            <div class="card-body">
+              <h3>Meta Quest</h3>
+              <p>Experiencias hands-only, passthrough y MR.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h3>Android XR</h3>
+              <p>Portar con lo que ya sabés: Android y Unity.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h3>SPECS</h3>
+              <p>AR espacial con guía visual y orbes.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="fundador">
+        <div class="light">
+          <div class="eyebrow">Fundador / Founder</div>
+          <h2 data-es="Conocé al fundador" data-en="Meet the founder">
+            Conocé al fundador
+          </h2>
+          <div class="founder">
+            <div>
+              <div class="avatar">RGC</div>
+              <p style="text-align: center" class="muted">Managua → LATAM</p>
+            </div>
+            <div>
+              <h3>Roberto Gonzalez Castro</h3>
+              <p>
+                <strong
+                  >Fundador de Kinusion Labs • Desarrollador XR • Miembro de
+                  Meta Horizon Start</strong
+                >
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </p>
+              <p>Construyendo para Quest, Android XR y SPECS desde Managua.</p>
+              <div class="quote">
+                “Si yo pude empezar con un Quest 2 desde Managua, vos también
+                podés. Empecemos por algo pequeño y terminémoslo.”
+              </div>
+              <div
+                style="
+                  display: flex;
+                  gap: 12px;
+                  margin-top: 16px;
+                  flex-wrap: wrap;
+                "
+              >
+                <a
+                  class="btn btn-p"
+                  href="https://www.linkedin.com/in/roberto-gonzalez-castro"
+                  target="_blank"
+                  rel="noopener"
+                  >LinkedIn</a
+                ><a class="btn btn-o" href="#proyectos">Ver proyectos</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="comunidad">
+        <div class="dark">
+          <h2 data-es="Comunidad" data-en="Community">Comunidad</h2>
+          <p
+            data-es="Unite, aprendé y seguí el proceso. Tutoriales nuevos cada semana en YouTube."
+            data-en="Join, learn and follow the process. New tutorials every week on YouTube."
+          >
+            Unite, aprendé y seguí el proceso. Tutoriales nuevos cada semana en
+            YouTube.
+          </p>
+          <div class="socials">
+            <a
+              href="https://www.youtube.com/@kinusionlabs"
+              target="_blank"
+              rel="noopener"
+              >YouTube</a
+            ><a
+              href="https://www.facebook.com/kinusionlabs"
+              target="_blank"
+              rel="noopener"
+              >Facebook</a
+            ><a
+              href="https://www.instagram.com/kinusionlabs"
+              target="_blank"
+              rel="noopener"
+              >Instagram</a
+            ><a
+              href="https://www.tiktok.com/@kinusionlabs"
+              target="_blank"
+              rel="noopener"
+              >TikTok</a
+            ><a href="https://x.com/kinusionlabs" target="_blank" rel="noopener"
+              >X</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto">
+        <h2 data-es="Hablemos" data-en="Let's talk">Hablemos</h2>
+        <form action="https://formspree.io/f/your-id" method="POST">
+          <label>Nombre / Name</label><input name="name" required /><label
+            >Email</label
+          ><input type="email" name="email" required /><label
+            >Mensaje / Message</label
+          ><textarea name="message" rows="4" required></textarea
+          ><button class="btn btn-p" type="submit">Enviar / Send</button>
+          <p class="muted">
+            Reemplazá el action de Formspree con tu ID para activar el
+            formulario en GitHub Pages.
+          </p>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap">
+        <div>
+          <strong>Kinusion Labs</strong><br />Desde Managua, para toda LATAM.<br />Hecho
+          desde Managua para toda LATAM.
+        </div>
+        <div style="display: flex; gap: 14px; flex-wrap: wrap">
+          <a
+            href="https://www.youtube.com/@kinusionlabs"
+            target="_blank"
+            rel="noopener"
+            >YouTube</a
+          ><a
+            href="https://www.facebook.com/kinusionlabs"
+            target="_blank"
+            rel="noopener"
+            >Facebook</a
+          ><a
+            href="https://www.instagram.com/kinusionlabs"
+            target="_blank"
+            rel="noopener"
+            >Instagram</a
+          ><a
+            href="https://www.tiktok.com/@kinusionlabs"
+            target="_blank"
+            rel="noopener"
+            >TikTok</a
+          ><a href="https://x.com/kinusionlabs" target="_blank" rel="noopener"
+            >X</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
